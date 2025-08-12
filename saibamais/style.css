@@ -1,15 +1,15 @@
 /* ================== FONTES ================== */
 @font-face{
     font-family: Agrandir;
-    src: url(../fontes/Agrandir-WideLight.otf);
+    src: url(./fontes/Agrandir-WideLight.otf);
  }
  @font-face{
     font-family: CalibriMS;
-    src: url(../fontes/calibril.woff);
+    src: url(./fontes/calibril.woff);
  }
  @font-face{
     font-family: Ablation;
-    src: url(../fontes/Ablation_PersonalUse.otf);
+    src: url(./fontes/Ablation_PersonalUse.otf);
  }
  
  
@@ -81,7 +81,7 @@
 
  .logo_header_w {
      position: fixed;
-     background: url(../img/white/logo-simples.png);
+     background: url(./img/white/logo-simples.png);
      background-size: cover;
      background-position: center center;
      height: 50px;
@@ -91,7 +91,7 @@
 
  .logo_header_b {
      position: fixed;
-     background: url(../img/black/logo-simples.png);
+     background: url(./img/black/logo-simples.png);
      background-size: cover;
      background-position: center center;
      height: 50px;
@@ -118,7 +118,7 @@
  }
 
  .logo_header_w_comp {
-     background: url(../img/white/sophiAcademy.png);
+     background: url(./img/white/sophiAcademy.png);
      background-size: cover;
      background-position: center center;
      height: 0px;
@@ -127,7 +127,7 @@
  }
 
  .logo_header_b_comp {
-     background: url(../img/black/sophiAcademy.png);
+     background: url(./img/black/sophiAcademy.png);
      background-size: cover;
      background-position: center center;
      height: 170px;
@@ -194,7 +194,7 @@
      padding-right: 2%;
      width: 30px;
      height: 30px;
-     background: url(../img/black/sol.png);
+     background: url(./img/black/sol.png);
      background-size: cover;
      background-position: center center;
      padding: 5px;
@@ -212,7 +212,7 @@
      padding-right: 2%;
      width: 25px;
      height: 25px;
-     background: url(../img/white/lua.png);
+     background: url(./img/white/lua.png);
      background-size: cover;
      background-position: center center;
      padding: 5px;

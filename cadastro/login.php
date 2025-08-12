@@ -14,7 +14,7 @@ while (($line = fgets($users_ler)) !== false) {
         if (strpos($line, $proc) !== false) { // Exemplo: Verifica se a linha contém uma determinada palavra
             $proc = "Senha: '{$senha}'";
             if (strpos($line, $proc) !== false) {
-                header("Location: ../index/index.html");
+                header("Location: ./index/index.html");
             }
         }
     }
@@ -32,7 +32,7 @@ while (($line = fgets($users_ler)) !== false) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SophiAcademy | Cursos Online</title>
     <link rel="stylesheet" href="./erro.css">
-    <link rel="shortcut icon" href="../img/black/sophiAcademy.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./img/black/sophiAcademy.png" type="image/x-icon">
 
 </head>
 
@@ -58,11 +58,11 @@ while (($line = fgets($users_ler)) !== false) {
         </div>
         <div class="nav_header" id="nav_header">
             <nav class="nav_header">
-                <a href="../index.html" class="link_a">Home</a>
-                <a href="../catalogo/catalogo.html" class="link_a">
+                <a href="./index.html" class="link_a">Home</a>
+                <a href="./catalogo/catalogo.html" class="link_a">
                 Catalogo
                 </a>
-                <a href="../login/login.html" class="link_a">
+                <a href="./login/login.html" class="link_a">
                     Entrar
                 </a>
                 <a href="./cadastro.html" class="link_a">
@@ -115,7 +115,7 @@ while (($line = fgets($users_ler)) !== false) {
     <footer>
         <!--Logo Grande do Footer-->
         <div class="logo-footer">
-            <img src="../img/White/sophiAcademy.png" alt="Logo">
+            <img src="./img/White/sophiAcademy.png" alt="Logo">
         </div>
         <!--Informações de Contato do Footer-->
         <div class="footer-info">
@@ -139,7 +139,7 @@ while (($line = fgets($users_ler)) !== false) {
                     <h1 class="footer-tituloseccoes">Informações</h1>
                     <div class="footer-nav">
                         <nav>
-                            <a href="../login/login.html" target="_blank">
+                            <a href="./login/login.html" target="_blank">
                                 <h3>Login</h3><br>
                             </a>
                             <a href="./cadastro.html">
@@ -165,19 +165,19 @@ while (($line = fgets($users_ler)) !== false) {
                     <nav>
                         <div class="footer-r">
                             <a href="https://www.instagram.com/">
-                                <img src="../img/White/instagram.png" class="imgredes">
+                                <img src="./img/White/instagram.png" class="imgredes">
                             </a>
                         </div>
 
                         <div class="footer-r">
                             <a href="https://x.com/?lang=pt">
-                                <img src="../img/White/x.png" class="imgredes">
+                                <img src="./img/White/x.png" class="imgredes">
                             </a>
                         </div>
 
                         <div class="footer-r">
                             <a href="https://www.youtube.com/">
-                                <img src="../img/White/yt.png" class="imgredes">
+                                <img src="./img/White/yt.png" class="imgredes">
                             </a>
                         </div>
 
@@ -205,7 +205,7 @@ while (($line = fgets($users_ler)) !== false) {
 
 
     </footer>
-    <script src="../padrões/script.js"></script>
+    <script src="./padrões/script.js"></script>
 </body>
 
 </html>
