@@ -1,0 +1,7 @@
+Nome: 'fernandola' CPF: '555.555.555-55' Email: 'banana@qwe' Celular: '1569' Senha: '123' 
+Nome: 'assiral' CPF: '000.000.000-00' Email: 'asd@123' Celular: '1111111' Senha: '321' 
+Nome: 'Henrique Cosme da Silva' CPF: '505.683.358-48' Email: 'henrique.cosmemk2@gmail.com' Celular: '11955978209' Senha: 'Henrirafa21' 
+Nome: 'Larissa Otomo klarosk' CPF: '515.061.458-09' Email: 'sissaklarosk@gmail.com' Celular: '11963694967' Senha: 'Sissa123' 
+Nome: 'Gabriel Dezerto Reina' CPF: '450.341.948-05' Email: 'dezertogabriel@gmail.com' Celular: '11111111111' Senha: 'qwert' 
+Nome: 'Guilherme ' CPF: '123.456.789-78' Email: 'guilherme@gmail.com' Celular: '11912387876' Senha: 'gi123' 
+Nome: 'qwe' CPF: '122.121.121-55' Email: 'werfwefk@asda' Celular: '12123213231123123' Senha: '123' 

@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SophiAcademy | Cursos Online</title>
+  <link rel="stylesheet" href="./index/style.css" />
+  <link rel="shortcut icon" href=".\SophiAcademy\img/black/sophiAcademy.png" type="image/x-icon" />
+</head>
+
+<body>
+  <!-- ================== TEMA (DARK/LIGHT) ================== -->
+  <input type="checkbox" id="escolher_tema" />
+  <div class="tema">
+    <label for="escolher_tema">
+      <div class="sol" id="sol"></div>
+      <div class="lua" id="lua"></div>
+    </label>
+  </div>
+  <!-- ================== FIM TEMA ================== -->
+
+  <!-- ================== HEADER ================== -->
+  <header id="header">
+    <div class="logo_header" id="logo_header">
+      <div class="logo_header_w"></div>
+      <div class="logo_header_b"></div>
+    </div>
+    <div class="logo_header_comp" id="logo_header_comp">
+      <div class="logo_header_w_comp"></div>
+      <div class="logo_header_b_comp"></div>
+    </div>
+    <div class="nav_header" id="nav_header">
+      <nav class="nav_header">
+        <a href=".\index.html" class="link_a">Home</a>
+        <a href=".\catalogo/catalogo.html" class="link_a">Catalogo</a>
+        <a href=".\login/login.html" class="link_a">Entrar</a>
+        <a href=".\cadastro/cadastro.html" class="link_a">Cadastrar</a>
+      </nav>
+    </div>
+    <div class="search_header">
+      <input type="text" class="text" placeholder="Procurar" autofocus required />
+      <input type="submit" class="submit" value="🔍" />
+    </div>
+  </header>
+  <!-- ================== FIM HEADER ================== -->
+
+  <main class="content">
+    <!-- =============== BANNER INICIAL =============== -->
+    <section class="banner-inicial">
+      <div class="banner-inicial-content">
+        <div class="banner-text">
+          <h1>Transforme seu futuro com conhecimento</h1>
+          <p>Aprenda com os melhores profissionais do mercado</p>
+          <a href=".\cadastro/cadastro.html"><button class="banner-button">Comece Agora</button></a>
+        </div>
+        <img src=".\img/banners/1.png" alt="banner-inicial">
+      </div>
+    </section>
+    <!-- =============== FIM BANNER INICIAL =============== -->
+
+    <!-- =============== CARROUSEL DE CATEGORIAS =============== -->
+    <section class="carrousel-categorias">
+      <div class="categ-tit">
+        <span class="title-categ">Cursos mais procuradas no Brasil!</span>
+      </div>
+      <div class="carrousel-categorias-content">
+        <div class="carrousel-categorias-lista">
+          <div class="carousel-slide">
+            <a href="./saibamais/saibamais-webdesign.html">
+              <div class="bloco-1">
+                <img src=".\img-cursos/dev.jfif" alt="Desenvolvimento Web">
+                <div class="categoria-info">
+                  <h3 class="categoria-titulo">Web Design</h3>
+                  <p class="categoria-desc">Aprenda HTML, CSS, JavaScript e frameworks modernos</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="carousel-slide">
+            <a href="./saibamais/saibamais-datascience.html">
+              <div class="bloco-2">
+                <img src=".\img-cursos/DATA.jfif" alt="Data Science">
+                <div class="categoria-info">
+                  <h3 class="categoria-titulo">Data Science</h3>
+                  <p class="categoria-desc">Python, análise de dados e machine learning</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="carousel-slide">
+            <a href="./saibamais/saibamais-marketing.html">
+              <div class="bloco-3">
+                <img src=".\img-cursos/Marketing diital.jfif" alt="Marketing Digital">
+                <div class="categoria-info">
+                  <h3 class="categoria-titulo">Marketing Digital</h3>
+                  <p class="categoria-desc">SEO, redes sociais e estratégias de conteúdo</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="carousel-slide">
+            <a href="./saibamais/saibamais-uiux.html">
+              <div class="bloco-2">
+                <img src=".\img-cursos/UX.webp" alt="Design UX/UI">
+                <div class="categoria-info">
+                  <h3 class="categoria-titulo">Design UX/UI</h3>
+                  <p class="categoria-desc">Crie interfaces incríveis e experiências memoráveis</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- =============== FIM CARROUSEL DE CATEGORIAS =============== -->
+
+    <!-- =============== inicio merchan =============== -->
+    <div class="tabs-container">
+      <div class="tabs">
+        <button class="tab-link active" onclick="openTab(event, 'tab1')">Curso em Destaque</button>
+        <button class="tab-link" onclick="openTab(event, 'tab2')">Novidades</button>
+        <button class="tab-link" onclick="openTab(event, 'tab3')">Ranking Alunos do mês</button>
+        <button class="tab-link" onclick="openTab(event, 'tab4')">Suporte Rápido</button>
+      </div>
+
+      <!-- Tab 1 - Curso em Destaque -->
+      <div id="tab1" class="tab-content" style="display:block;">
+        <div class="tab-1">
+          <img src=".\img-cursos/curso-excel.png" alt="Curso de Excel">
+          <div class="tab-1-content">
+            <h2 class="title-tab1">Excel Básico Profissionais</h2>
+            <p class="subtitle-tab1">Duração: 12 horas | Nível: Iniciante</p>
+            <p class="text-tab1">Aprenda técnicas básicas de Excel para análise de dados, automação e dashboards profissionais. Este curso é perfeito para quem quer iniciar sua ida para o mercado de trabalho com habilidades em Excel.</p>
+            <a href=".\saibamais/curso-excel.html"><button class="tab-1-button">Saiba Mais</button></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab 2 - Novidades -->
+      <div id="tab2" class="tab-content">
+        <div class="novidades-grid">
+          <div class="novidade-card">
+            
+            <div class="novidade-content">
+              <h3 class="novidade-title">Novo Curso: Python para Data Science</h3>
+              <p class="novidade-date">13 de junho, 2025</p>
+              <p class="novidade-desc">Aprenda Python do zero e domine as principais bibliotecas para análise de dados.</p>
+            </div>
+          </div>
+          <div class="novidade-card">
+            
+            <div class="novidade-content">
+              <h3 class="novidade-title">Atualização: Curso de Marketing Digital</h3>
+              <p class="novidade-date">10 de abril, 2025</p>
+              <p class="novidade-desc">Novos módulos sobre marketing de influência e estratégias de conteúdo.</p>
+            </div>
+          </div>
+          <div class="novidade-card">
+         
+            <div class="novidade-content">
+              <h3 class="novidade-title">Webinar: Carreiras em Tech</h3>
+              <p class="novidade-date">5 de Março, 2025</p>
+              <p class="novidade-desc">Conversa com profissionais sobre oportunidades na área de tecnologia.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab 3 - Ranking Alunos -->
+      <div id="tab3" class="tab-content">
+        <div class="ranking-container">
+          <div class="ranking-header">
+            <h2 class="ranking-title">Top Alunos do Mês</h2>
+            <div class="ranking-filter">
+              <button class="active">Geral</button>
+             
+            </div>
+          </div>
+          <div class="ranking-list">
+            <div class="ranking-item">
+              <div class="ranking-position">1</div>
+              <img src=".\index/avatares/pessoa1-fem.jfif" alt="Avatar" class="ranking-avatar">
+              <div class="ranking-info">
+                <div class="ranking-name">Maria Silva</div>
+                <div class="ranking-stats">15 cursos concluídos | 98% de aproveitamento</div>
+              </div>
+              <div class="ranking-score">980 pts</div>
+            </div>
+            <div class="ranking-item">
+              <div class="ranking-position">2</div>
+              <img src=".\index/avatares/pessoa2-masc.webp" alt="Avatar" class="ranking-avatar">
+              <div class="ranking-info">
+                <div class="ranking-name">João Santos</div>
+                <div class="ranking-stats">12 cursos concluídos | 95% de aproveitamento</div>
+              </div>
+              <div class="ranking-score">809 pts</div>
+            </div>
+            <div class="ranking-item">
+              <div class="ranking-position">3</div>
+              <img src=".\index/avatares/538978835d56bb7caf7664deff48a9ef.jpg" alt="Avatar" class="ranking-avatar">
+              <div class="ranking-info">
+                <div class="ranking-name">Ana Costa</div>
+                <div class="ranking-stats">10 cursos concluídos | 92% de aproveitamento</div>
+              </div>
+              <div class="ranking-score">800 pts</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab 4 - Suporte Rápido -->
+      <div id="tab4" class="tab-content">
+        <div class="faq-chat">
+          <div class="faq-messages" id="faqMessages">
+            <div class="faq-bot">Olá! Como posso ajudar? Escolha uma pergunta:</div>
+          </div>
+          <div class="faq-questions">
+            <button onclick="faqAnswer(1)">Como acesso meu certificado?</button>
+            <button onclick="faqAnswer(2)">Posso estudar pelo celular?</button>
+            <button onclick="faqAnswer(3)">Como funciona o suporte?</button>
+            <button onclick="faqAnswer(4)">Quais formas de pagamento?</button>
+            <button onclick="faqAnswer(5)">Como funciona a garantia?</button>
+            <button onclick="faqAnswer(6)">Posso cancelar a assinatura?</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+   
+
+    <!-- =============== CREDIBILIDADE =============== -->
+    <section class="credibilidade-container">
+      <p class="credibilidade-text">
+        Credibilidade reconhecida por mais de 20.000 empresas e milhões de alunos ao redor do mundo
+      </p>
+      <div class="credibilidade-marquee">
+        <div class="marquee-content">
+          <img src=".\img/logo-patrocinio/logo-gogle-removebg-preview.png" alt="Logo Google" />
+          <img src=".\img/logo-patrocinio/logo-microsoft-removebg-preview.png" alt="Logo Microsoft" />
+          <img src=".\img/logo-patrocinio/NetApp-Symbol.png" alt="Logo 3" />
+          <img src=".\img/logo-patrocinio/Nutanix-Logo-removebg-preview.png" alt="Logo 4" />
+          <img src=".\img/logo-patrocinio/logo-itau-removebg-preview.png" alt="Logo 5" />
+        </div>
+      </div>
+    </section>
+    <!-- =============== FIM CREDIBILIDADE =============== -->
+
+    
+
+
+    <!-- =============== PLANOS ======= ======== -->
+    <section class="container-plans">
+      <span class="title-P">Como começar? É simples e rápido, escolha um plano e vá em frente!</span>
+  
+      <div class="background-P">
+        <!-- Plano Silver -->
+        <div class="card-1">
+          <div class="listra-C1"></div>
+          <span class="plan-title">Plano Silver</span>
+          <ul class="plan-details">
+            <li>✔ Acesso a todos os cursos</li>
+            <li>✔ Certificados digitais</li>
+            <li>✔ Suporte por e-mail</li>
+          </ul>
+          <span class="plan-price">R$ 29,90/mês</span>
+          <button><a href="https://mpago.la/2HRK774">Comprar</a></button>
+        </div>
+        <!-- Plano Platinum -->
+        <div class="card-2 destaque">
+          <div class="listra-C2"></div>
+          <span class="plan-title">Plano Platinum</span>
+          <ul class="plan-details">
+            <li>✔ Tudo do plano Silver</li>
+            <li>✔ Suporte prioritário</li>
+            <li>✔ Aulas ao vivo exclusivas</li>
+            <li>✔ Acesso antecipado a novos cursos</li>
+          </ul>
+          <span class="plan-price">R$ 49,90/mês</span>
+          <button><a href="https://mpago.la/1XsbLu8">Comprar</a></button>
+        </div>
+        <!-- Plano Diamond -->
+        <div class="card-3">
+          <div class="listra-C3"></div>
+          <span class="plan-title">Plano Diamond</span>
+          <ul class="plan-details">
+            <li>✔ Tudo do plano Platinum</li>
+            <li>✔ Mentorias individuais</li>
+            <li>✔ Participação em eventos exclusivos</li>
+            <li>✔ Consultoria de carreira</li>
+          </ul>
+          <span class="plan-price">R$ 79,90/mês</span>
+          <button><a href="https://mpago.la/1oit18v">Comprar</a></button>
+        </div>
+      </div>
+    </section>
+    <!-- =============== FIM PLANOS =============== -->
+     <!-- =============== FEEDBACK =============== -->
+<section class="container-feedback">
+  <div class="feedback-title">
+      <h2>O que nossos alunos dizem</h2>
+      <p>Depoimentos de quem já transformou sua carreira com a SophiAcademy</p>
+  </div>
+  <div class="container-feedback-content">
+      <div class="fed1">
+          <div class="feedback-header">
+              <img src=".\index/avatares/pessoa1-fem.jfif" alt="Avatar" class="feedback-avatar">
+              <div class="feedback-info">
+                  <div class="feedback-name">Maria Silva</div>
+                  <div class="feedback-role">Desenvolvedora Front-end</div>
+              </div>
+          </div>
+          <div class="feedback-rating">★★★★★</div>
+          <div class="feedback-text">
+              "Os cursos da SophiAcademy transformaram minha carreira. O conteúdo é atual e prático, e o suporte é excelente!"
+          </div>
+          <div class="feedback-date">15 de Março, 2024</div>
+      </div>
+
+      <div class="fed2">
+          <div class="feedback-header">
+              <img src=".\index/avatares/pessoa2-masc.webp" alt="Avatar" class="feedback-avatar">
+              <div class="feedback-info">
+                  <div class="feedback-name">João Santos</div>
+                  <div class="feedback-role">Analista de Dados</div>
+              </div>
+          </div>
+          <div class="feedback-rating">★★★★</div>
+          <div class="feedback-text">
+              "Excelente plataforma! Os professores são muito didáticos e o material é completo. Recomendo fortemente!"
+          </div>
+          <div class="feedback-date">10 de Maio, 2025</div>
+      </div>
+
+      <div class="fed3">
+          <div class="feedback-header">
+              <img src=".\index/avatares/538978835d56bb7caf7664deff48a9ef.jpg" alt="Avatar" class="feedback-avatar">
+              <div class="feedback-info">
+                  <div class="feedback-name">Ana Costa</div>
+                  <div class="feedback-role">UX Designer</div>
+              </div>
+          </div>
+          <div class="feedback-rating">★★★★</div>
+          <div class="feedback-text">
+              "A qualidade dos cursos é impressionante. Aprendi muito e consegui uma nova oportunidade na área!"
+          </div>
+          <div class="feedback-date">5 de Janeiro, 2025</div>
+      </div>
+
+      <div class="fed4">
+          <div class="feedback-header">
+              <img src=".\index/avatares/pessoa3-masc.jfif" alt="Avatar" class="feedback-avatar">
+              <div class="feedback-info">
+                  <div class="feedback-name">Pedro Oliveira</div>
+                  <div class="feedback-role">Desenvolvedor Full-stack</div>
+              </div>
+          </div>
+          <div class="feedback-rating">★★★★★</div>
+          <div class="feedback-text">
+              "Os projetos práticos são muito bem estruturados e me ajudaram a construir um portfólio sólido."
+          </div>
+          <div class="feedback-date">1 de Março, 2025</div>
+      </div>
+  </div>
+  <div class="feedback-nav">
+      <button class="prev-btn"><i class="fas fa-chevron-left"></i><</button>
+      <button class="next-btn"><i class="fas fa-chevron-right"></i>></button>
+  </div>
+</section>
+<!-- =============== FIM FEEDBACK =============== -->
+  </main>
+
+  <!-- =============== FOOTER =============== -->
+  <footer>
+    <!--Logo Grande do Footer-->
+    <div class="logo-footer">
+      <img src=".\img/White/sophiAcademy.png" alt="Logo" />
+    </div>
+    <!--Informações de Contato do Footer-->
+    <div class="footer-info">
+      <div class="footer-SobreNos">
+        <h1 class="footer-tituloseccoes">Sobre Nós</h1>
+        <h3>Nos conheça melhor</h3>
+        <h3>Endereço: Rua Quatro, 550, São Caetano - SP (Brasil)</h3>
+        <h3>Telefone: (55) 11 9999-9999</h3>
+        <h3>Atendimento: 8h - 22h (segunda à sexta)</h3>
+        
+      </div>
+      <!--Login e Cadastro-->
+      <div class="footer-conta">
+        <h1 class="footer-tituloseccoes">Informações</h1>
+        <a href="./login/login.html" target="_blank"><h3>Login</h3></a>
+        <a href="./cadastro/cadastro.html" target="_blank"><h3>Cadastro</h3></a>
+        <h3>Política de Privacidade</h3>
+        <h3>Direitos autorais</h3>
+        <h3>FAQ</h3>
+      </div>
+      <!--Redes Sociais no Footer-->
+      <div class="footer-Redes">
+        <h1 class="footer-tituloseccoes">Redes Sociais</h1>
+        <div class="footer-r"><a href="https://www.instagram.com/"><img src=".\img/White/instagram.png" class="imgredes" /></a></div>
+        <div class="footer-r"><a href="https://x.com/?lang=pt"><img src=".\img/White/x.png" class="imgredes" /></a></div>
+        <div class="footer-r"><a href="https://www.youtube.com/"><img src=".\img/White/yt.png" class="imgredes" /></a></div>
+      </div>
+      <!--Forma de Contato no footer-->
+      <div class="footer-Contato">
+        <h1 class="footer-tituloseccoes">Nos Contate</h1>
+        <h3>Alguma dúvida? Nos mande um e-mail!</h3>
+        <div class="footer-email">
+          <input type="email" placeholder="Seu e-mail" />
+          <div class="footer-ButtonContato">
+            <input type="submit" value="Enviar" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- =============== FIM FOOTER =============== -->
+
+  <script src=".\padrões/script.js"></script>
+</body>
+
+</html>

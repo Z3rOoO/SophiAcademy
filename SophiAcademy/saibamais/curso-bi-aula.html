@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excel Básico para Profissionais | Aula em Andamento</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/img/black/sophiAcademy.png" type="image/x-icon">
+    
+</head>
+<body>
+    <header id="header">
+        <div class="logo_header" id="logo_header">
+          <div class="logo_header_w"></div>
+          <div class="logo_header_b"></div>
+        </div>
+        <div class="logo_header_comp" id="logo_header_comp">
+          <div class="logo_header_w_comp"></div>
+          <div class="logo_header_b_comp"></div>
+        </div>
+        <div class="nav_header" id="nav_header">
+          <nav class="nav_header">
+        <a href="..\index.html" class="link_a">Home</a>
+        <a href="..\catalogo/catalogo.html" class="link_a">Catalogo</a>
+        <a href="..\login/login.html" class="link_a">Entrar</a>
+        <a href="..\cadastro/cadastro.html" class="link_a">Cadastrar</a>
+      </nav>
+        </div>
+        <div class="search_header">
+          <input type="text" class="text" placeholder="Procurar" autofocus required />
+          <input type="submit" class="submit" value="🔍" />
+        </div>
+      </header>
+
+    <div class="main-content">
+        <div class="course-container">
+            <div class="video-section">
+                <h1> Business Intelligence</h1>
+                <div class="video-container">
+                    <iframe 
+                        id="lessonVideo"
+                        width="100%" 
+                        height="500" 
+                        src="https://www.youtube.com/embed/U6tzlAShVA0?si=eDUOUPlfyam4hGPN" 
+                        title="Excel Avançado - Aula Demonstrativa" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+
+                <div class="course-actions">
+                    <button class="btn btn-primary" id="completeBtn">Marcar como Concluído</button>
+                    <button class="btn btn-secondary" id="nextBtn">Próxima Aula</button>
+                </div>
+            </div>
+
+            <div class="course-progress">
+                <h2>Seu Progresso</h2>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+                <p id="progressText">0% Completo</p>
+
+                <h3>Conteúdo do Curso</h3>
+                <ul class="lesson-list" id="lessonList">
+                    <li class="lesson-item" data-lesson="1">Importância do Bi</li>
+                    <li class="lesson-item" data-lesson="2">Multidimensão</li>
+                    <li class="lesson-item" data-lesson="3">Dimensão de Negócio</li>
+                    <li class="lesson-item" data-lesson="4">Dimensão Fato</li>
+                    <li class="lesson-item" data-lesson="5">Hierarquia para BI</li>
+                    <li class="lesson-item" data-lesson="6">Indicadores</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="logo-footer">
+            <img src="/img/White/sophiAcademy.png" alt="Logo" />
+        </div>
+        <div class="footer-info">
+            <div class="footer-SobreNos">
+                <h1 class="footer-tituloseccoes">Sobre Nós</h1>
+                <a href="/sobreNos/sobrenos.html"><h3>Nos conheça melhor</h3></a>
+                <h3>Endereço: Rua Quatro, 550, São Caetano - SP (Brasil)</h3>
+                <h3>Telefone: (55) 11 9999-9999</h3>
+                <h3>Atendimento: 8h - 22h (segunda à sexta)</h3>
+                
+            </div>
+            <div class="footer-conta">
+                <h1 class="footer-tituloseccoes">Informações</h1>
+                <a href="/login/login.html" target="_blank"><h3>Login</h3></a>
+                <a href="/cadastro/cadastro.html" target="_blank"><h3>Cadastro</h3></a>
+                <h3>Política de Privacidade</h3>
+                <h3>Direitos autorais</h3>
+                <h3>FAQ</h3>
+            </div>
+            <div class="footer-Redes">
+                <h1 class="footer-tituloseccoes">Redes Sociais</h1>
+                <div class="footer-r"><a href="https://www.instagram.com/"><img src="/img/White/instagram.png" class="imgredes" /></a></div>
+                <div class="footer-r"><a href="https://x.com/?lang=pt"><img src="/img/White/x.png" class="imgredes" /></a></div>
+                <div class="footer-r"><a href="https://www.youtube.com/"><img src="/img/White/yt.png" class="imgredes" /></a></div>
+            </div>
+            <div class="footer-Contato">
+                <h1 class="footer-tituloseccoes">Nos Contate</h1>
+                <h3>Alguma dúvida? Nos mande um e-mail!</h3>
+                <div class="footer-email">
+                    <input type="email" placeholder="Seu e-mail" />
+                    <div class="footer-ButtonContato">
+                        <input type="submit" value="Enviar" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>document.addEventListener('DOMContentLoaded', function() {
+        const lessonList = document.getElementById('lessonList');
+        const completeBtn = document.getElementById('completeBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        const progressFill = document.getElementById('progressFill');
+        const progressText = document.getElementById('progressText');
+        const lessonVideo = document.getElementById('lessonVideo');
+        
+        let currentLesson = 1; 
+        const totalLessons = 6; 
+        let completedLessons = 0; 
+      
+        const videoIds = {
+            1: "U6tzlAShVA0?si=xw2HSofsrJe19mGA", 
+            2: "nlO2tSWpVaQ?si=NRJGYxBlsBJ5pq_W", 
+            3: "V6XeILhMIWY?si=TJOj2dcaid_Tb2rE	",
+            4: "RlXAM8417Y8?si=tPz28C0qInbDGyan", 
+            5: "5PmiSjXUx6k?si=IUUENAFa8UwOYcyF", 
+            6: "wM7Ja43QJuE?si=o8w9LrrrmOWvySKb", 
+        };
+       
+        function updateVideo(lessonNumber) {
+            const videoId = videoIds[lessonNumber];
+            lessonVideo.src = `https://www.youtube.com/embed/${videoId}?si=7LMJePcWnqAcLo8Q`;
+        }
+        
+      
+        function updateProgress() {
+            const progress = (completedLessons / totalLessons) * 100;
+            progressFill.style.width = `${progress}%`;
+            progressText.textContent = `${Math.round(progress)}% Completo`;
+        }
+       
+        function updateLessonStates() {
+            const lessons = lessonList.getElementsByClassName('lesson-item');
+            Array.from(lessons).forEach((lesson, index) => {
+                const lessonNum = index + 1;
+                lesson.classList.remove('completed', 'active');
+                
+                if (lessonNum < currentLesson) {
+                    lesson.classList.add('completed');
+                } else if (lessonNum === currentLesson) {
+                    lesson.classList.add('active');
+                }
+            });
+            
+           
+            completeBtn.disabled = false;
+            nextBtn.disabled = currentLesson >= totalLessons;
+        }
+        
+      
+        completeBtn.addEventListener('click', function() {
+            const currentLessonElement = document.querySelector(`[data-lesson="${currentLesson}"]`);
+            if (!currentLessonElement.classList.contains('completed')) {
+                currentLessonElement.classList.add('completed');
+                completedLessons++;
+                updateProgress();
+            }
+            if (currentLesson < totalLessons) {
+                currentLesson++;
+                updateLessonStates();
+                updateVideo(currentLesson);
+            }
+        });
+        
+      
+        nextBtn.addEventListener('click', function() {
+            if (currentLesson < totalLessons) {
+                currentLesson++;
+                updateLessonStates();
+                updateVideo(currentLesson);
+            }
+        });
+        
+       
+        lessonList.addEventListener('click', function(e) {
+            const lessonItem = e.target.closest('.lesson-item');
+            if (lessonItem) {
+                const lessonNum = parseInt(lessonItem.dataset.lesson);
+                if (lessonNum <= currentLesson) {
+                    currentLesson = lessonNum;
+                    updateLessonStates();
+                    updateVideo(currentLesson);
+                }
+            }
+        });
+        
+       
+        updateProgress();
+        updateLessonStates();
+        updateVideo(currentLesson);
+      });</script>   
+      <script src="..\padrões/script.js"></script>
+</body>
+</html>
